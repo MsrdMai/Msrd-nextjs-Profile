@@ -13,7 +13,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "types": ["react", "node"],
+		"skipDefaultLibCheck": true,
+		"baseUrl": ".",
+		"paths": {
+			"@components/*": ["components/*"],
+			"@layout/*": ["components/Layout/*"],
+			"@styles/*": ["styles/*"],
+			"@hooks/*": ["hooks/*"],
+			"@helper/*": ["helper/*"]
+		},
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
